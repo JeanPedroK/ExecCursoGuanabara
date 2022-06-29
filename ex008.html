@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        div#area {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            width: 500px;
+            height: 500px;
+            line-height: 500px;
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="area">
+        NATHALIA LAMB.
+    </div>
+
+    <Script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+
+            a.innerText = "Clicou!"
+            a.style.backgroundColor = "red"
+        }
+        function entrar() { 
+            
+
+            a.innerText = "Entrou!"
+            a.style.backgroundColor = "green"
+        }
+        function sair() {
+
+            a.innerText = "Saiu!"
+            a.style.backgroundColor = "blue"
+        }
+
+        // eventos de mouse ( mouseenter = quando o mouse entra na div )
+        // mousemove movendo dentro da div
+        // mousedown quando clicar e segurar
+        // mouseup quando somente soltar o clicar
+        // click quando vc pega as duas fazes do click
+        // mouseout quando o cursor sair da div
+        //   {} isso se chama um bloco ex: function "ação" {}
+
+    </Script>
+
+</body>
+
+</html>

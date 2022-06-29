@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN SC</title>
+</head>
+<Style>
+    body {
+        background-color: black;
+        color: White;
+        font-size: 20px;
+    }
+</Style>
+
+<body>
+    <div class="central" style="text-align: center;">
+        <h1>SISTEMA DE MULTA</h1>
+        Velocidade do carro:
+        <input type="number" name="txtvel" id="txtvel"> Km/h
+
+        <input type="button" value="Verificar" onclick="calcular()">
+    </div>
+    <div id="res" style="text-align: center;">
+
+    </div>
+    <script>
+        function calcular() {
+
+            var txtv = document.getElementById('txtvel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            if (vel > 50) {
+                res.innerHTML = `<p> Vôce está acima da velocidade permitida, <strong>MULTADO!</strong>`
+                res.style.backgroundColor = "red"
+                res.innerHTML += `<p2>SEU VAGABUNDO</p2>`
+            } else {
+                res.innerHTML = `<p> Vôce está dentro da velocidade permitida, <strong>Have a good day!</strong></p>`
+                res.style.backgroundColor = "green"
+                res.innerHTML += `<p2>SEMPRE DIRIGA COM CUIDADO</p2>`
+            }
+            if (vel == 50){
+                res.innerHTML = `<p> Quase ein!`
+                res.style.backgroundColor = "blue" 
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

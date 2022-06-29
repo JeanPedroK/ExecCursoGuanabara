@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: black;
+            /*comentario em css */
+            font: normal 20pt Arial;
+
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        p {
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Olá, mundo!</h1> <!-- comentario em HTML-->
+    <p>ja me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um numero:')) // window.prompt retorna uma string por padrão 
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        var s = n1 + n2
+        // somente number o script entente automaticamente e faz a soma
+        // Number.parseInt (n inteiro)
+        // Number.parseFloat (n real com ,)
+        window.alert('A soma dos valores é: ' + s)
+        // + concatenação
+        // ${} templates string para interpolar ex: `A soma entre ${n1} e ${n2} é igual a ${s}`
+       // (number + number) para soma adição
+       // (string + string) para concatenação
+       // quando necessario conversar um numero para string usar o s.toString() ou String(s)
+       // '' ou "" string simples
+       // s.length qual o tamanho da string
+       // s.toUpperCase() tudo para letra maiuscula
+       // s.toLowerCase() tudo para letra minuscula
+
+    </script>
+
+</body>
+
+</html>
